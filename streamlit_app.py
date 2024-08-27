@@ -9,7 +9,6 @@ import numpy as np
 with open('catboost_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-
 st.write("""
 This app predicts house prices based on various features of the property. 
 Please input the values for the features below to get a price prediction.
