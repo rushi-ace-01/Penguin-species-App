@@ -5,7 +5,6 @@ st.title('🤖 House Prediction App')
 import streamlit as st
 import pickle
 import numpy as np
-
 # Load the CatBoost model
 with open('catboost_model.pkl', 'rb') as file:
     model = pickle.load(file)
