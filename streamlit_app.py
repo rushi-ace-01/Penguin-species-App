@@ -49,7 +49,7 @@ with st.expander('Input features'):
   st.write('**Combined Data**')
   input_penguins
   
-encode= ['island'. 'sex']
+encode= ['island','sex']
 df_penguins= pd.get_dummiess(input_penguins, prefix= encode)
 df_penguins
   
