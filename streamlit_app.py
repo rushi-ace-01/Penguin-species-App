@@ -26,7 +26,7 @@ with st.sidebar:
   st.header('Input Features')
   #"island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
   island= st.selectbox('Island', ('Torgersen', 'Biscoe', 'Dream'))
-  gender= st.selectbox('Gender', ('Male', 'Female'))
+  sex= st.selectbox('Sex', ('Male', 'Female'))
   bill_length_mm= st.slider('Bill length (mm)', 39.1 , 59.6,43.9)
   bill_depth_mm= st.slider('Bill depth (mm)', 13.1, 21.5, 17.2)
   body_mass_g= st.slider('Body mass(g)' , 2700.0, 6300.0, 4207.0)
@@ -38,7 +38,7 @@ data = {'island': island,
          'bill_length_mm': bill_length_mm,
          'bill_depth_mm': bill_depth_mm,
          'body_mass_g': body_mass_g, 
-         'gender': gender}
+         'sex': sex}
          
 input_df= pd.DataFrame(data, index=[0])
 input_penguins = pd.concat([input_df, X], axis=0)
