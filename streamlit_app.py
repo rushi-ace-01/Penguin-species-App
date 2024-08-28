@@ -34,11 +34,11 @@ with st.sidebar:
   #Create dataframe for input features
   
 data = {'island': island,
-         'gender': gender,
+         'sex': sex,
          'bill_length_mm': bill_length_mm,
          'bill_depth_mm': bill_depth_mm,
          'body_mass_g': body_mass_g, 
-         'sex': sex}
+         'flipper_length_mm': flipper_length_mm}
          
 input_df= pd.DataFrame(data, index=[0])
 input_penguins = pd.concat([input_df, X], axis=0)
