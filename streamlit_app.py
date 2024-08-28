@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas ad pd
+import pandas as pd
 
 st.title('🤖 Machine Learning App')
 
