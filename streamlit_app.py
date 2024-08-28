@@ -23,4 +23,4 @@ with st.expander('Data visualization'):
 
 #Data preprations
 with st.sidebar:
-  st.hewader('Input Features')
+  st.header('Input Features')
