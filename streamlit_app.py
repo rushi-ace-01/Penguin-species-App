@@ -46,7 +46,7 @@ input_penguins = pd.concat([input_df, X], axis=0)
 with st.expander('Input features')
   st.write('**Input Features**')
   input_df
-  st.write('**Combined Data**)
+  st.write('**Combined Data**')
   input_penguins
          
   
