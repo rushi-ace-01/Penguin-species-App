@@ -13,3 +13,7 @@ with st.expander('Data'):
   st.write('**X**')
   X= df.drop('species', axis=1)
   X
+
+  sst.write('**y**')
+  y= df.species
+  y
