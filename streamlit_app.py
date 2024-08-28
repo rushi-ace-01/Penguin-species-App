@@ -14,6 +14,6 @@ with st.expander('Data'):
   X= df.drop('species', axis=1)
   X
 
-  sst.write('**y**')
+  st.write('**y**')
   y= df.species
   y
