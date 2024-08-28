@@ -43,13 +43,16 @@ data = {'island': island,
 input_df= pd.DataFrame(data, index=[0])
 input_penguins = pd.concat([input_df, X], axis=0)
 
-with st.expander('Input features'):
-  st.write('**Input Features**')
-  input_df
-  st.write('**Combined Data**')
-  input_penguins
-  
+#Encode
 encode= ['island','sex']
 df_penguins= pd.get_dummies(input_penguins, prefix= encode)
-df_penguins
+input_row= df_penguins[:1]
+
+with st.expander('Input features'):
+  st.write('**Input Penguin**')
+  input_df
+  st.write('**Combined Penguin Data**')
+  input_penguins
+  st.write('**Encoded input penguin**')
+  input_row
   
