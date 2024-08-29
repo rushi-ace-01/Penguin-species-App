@@ -1,4 +1,7 @@
-# 🤖 Machine Learning app
+# 🤖 Machine Learning app (Penguin Species Prediction)
+
+##App Link
+https://r-machinelearning.streamlit.app/
 
 This is a machine learning app.
 ## Demo App
