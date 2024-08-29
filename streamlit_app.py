@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
-st.title('🤖 Machine Learning App')
-
-st.info('This app predicts outcomes based on machine learning model!')
+# Title and Header
+st.markdown("<h1 style='text-align: center; color: #4CAF50;'>🐧 Penguin Species Prediction App</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: #0F9D58;'>Predict the species of a penguin using machine learning</h3>", unsafe_allow_html=True)
 
 with st.expander('Data'):
   st.write('**Raw Data**')
